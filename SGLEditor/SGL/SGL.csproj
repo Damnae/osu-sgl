@@ -65,6 +65,7 @@
     <Compile Include="Elements\Scope.cs" />
     <Compile Include="Elements\CallItem.cs" />
     <Compile Include="Library\Classes\AbstractVisualClass.cs" />
+    <Compile Include="Library\Functions\Calculation\ExpFunction.cs" />
     <Compile Include="Library\Functions\Calculation\RandFunction.cs" />
     <Compile Include="Library\Functions\Calculation\SinFunction.cs" />
     <Compile Include="Library\Functions\IO\PrintFunction.cs" />
