@@ -75,7 +75,7 @@ namespace SGL.Library.Functions
                 
             }
             // TODO: Handle exception properly
-            throw new Exception("A method specified an incorrect number of parameters (expected " + parameters.Count + ", got " + parameterNames.Count + ")");
+            throw new Exception("A method specified an incorrect number of parameters (expected " + parameterNames.Count + ", got " + parameters.Count + ")");
         }
 
         public Value Invoke(Value objectVar, List<Value> parameters)
@@ -111,7 +111,7 @@ namespace SGL.Library.Functions
                 return returnValue;
             }
             // TODO: Handle exception properly
-            throw new Exception("A method specified an incorrect number of parameters (expected " + parameters.Count + ", got " + parameterNames.Count + ")");
+            throw new Exception("A method specified an incorrect number of parameters (expected " + parameterNames.Count + ", got " + parameters.Count + ")");
         }
     }
 }
