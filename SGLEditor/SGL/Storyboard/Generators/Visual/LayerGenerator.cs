@@ -42,7 +42,7 @@ namespace SGL.Storyboard.Generators.Visual
             return null;
         }
 
-        public override void move(int easing, int startTime, int endTime, int startX, int startY, int endX, int endY)
+		public override void move(int easing, int startTime, int endTime, double startX, double startY, double endX, double endY)
         {
             foreach (AbstractVisualGenerator obj in LayerGenerators)
             {

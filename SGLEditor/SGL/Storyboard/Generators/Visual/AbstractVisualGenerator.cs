@@ -27,8 +27,8 @@ namespace SGL.Storyboard.Generators.Visual
         protected string layer;
         protected string origin;
         protected int priority = 0;
-        protected int x = 320;
-        protected int y = 240;
+        protected double x = 320;
+		protected double y = 240;
         protected double scaleFactor = 1;
         protected double opacity = 1;
         protected double rotation = 0;
@@ -53,7 +53,7 @@ namespace SGL.Storyboard.Generators.Visual
 
         #region Properties
 
-        public int X
+		public double X
         {
             get
             {
@@ -61,7 +61,7 @@ namespace SGL.Storyboard.Generators.Visual
             }
         }
 
-        public int Y
+		public double Y
         {
             get
             {
@@ -240,7 +240,7 @@ namespace SGL.Storyboard.Generators.Visual
 
         #region move
 
-        public virtual void move(int easing, int startTime, int endTime, int startX, int startY, int endX, int endY)
+		public virtual void move(int easing, int startTime, int endTime, double startX, double startY, double endX, double endY)
         {
             if (easing < 0 || easing > 2) throw new CompilerException(-1, 315, easing.ToString());
             var startParams = new double[] {startX, startY};
@@ -250,17 +250,17 @@ namespace SGL.Storyboard.Generators.Visual
             this.y = endY;
         }
 
-        public void move(int startTime, int endTime, int startX, int startY, int endX, int endY)
+		public void move(int startTime, int endTime, double startX, double startY, double endX, double endY)
         {
             move(0, startTime, endTime, startX, startY, endX, endY);
         }
 
-        public void move(int startTime, int startX, int startY)
+		public void move(int startTime, double startX, double startY)
         {
             move(0, startTime, startTime, startX, startY, startX, startY);
         }
 
-        public void move(int startX, int startY)
+		public void move(int startX, double startY)
         {
             move(0, 0, 0, startX, startY, startX, startY);
         }
