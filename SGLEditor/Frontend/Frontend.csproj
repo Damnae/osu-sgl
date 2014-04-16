@@ -8,8 +8,8 @@
     <ProjectGuid>{25D1AE24-8712-4515-A6E5-1D59387382B0}</ProjectGuid>
     <OutputType>WinExe</OutputType>
     <AppDesignerFolder>Properties</AppDesignerFolder>
-    <RootNamespace>SGLTest</RootNamespace>
-    <AssemblyName>SGLParserTester</AssemblyName>
+    <RootNamespace>SGLEditor</RootNamespace>
+    <AssemblyName>SGLEditor</AssemblyName>
     <TargetFrameworkVersion>v2.0</TargetFrameworkVersion>
     <FileAlignment>512</FileAlignment>
     <IsWebBootstrapper>false</IsWebBootstrapper>
@@ -63,31 +63,15 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
-    <Compile Include="IErrorReporter.cs" />
     <Compile Include="SimpleSGLEditor.cs">
       <SubType>Form</SubType>
     </Compile>
     <Compile Include="SimpleSGLEditor.Designer.cs">
       <DependentUpon>SimpleSGLEditor.cs</DependentUpon>
     </Compile>
-    <Compile Include="TestCreator.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="TestCreator.Designer.cs">
-      <DependentUpon>TestCreator.cs</DependentUpon>
-    </Compile>
     <Compile Include="UpdateCheck.cs" />
-    <Compile Include="Form1.cs">
-      <SubType>Form</SubType>
-    </Compile>
-    <Compile Include="Form1.Designer.cs">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </Compile>
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
-    <EmbeddedResource Include="Form1.resx">
-      <DependentUpon>Form1.cs</DependentUpon>
-    </EmbeddedResource>
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
@@ -100,9 +84,6 @@
     </Compile>
     <EmbeddedResource Include="SimpleSGLEditor.resx">
       <DependentUpon>SimpleSGLEditor.cs</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="TestCreator.resx">
-      <DependentUpon>TestCreator.cs</DependentUpon>
     </EmbeddedResource>
     <None Include="OSB.syn">
       <CopyToOutputDirectory>Always</CopyToOutputDirectory>
