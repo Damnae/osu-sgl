@@ -74,8 +74,8 @@ namespace SGL.Library.Functions
                 }*/
                 
             }
-            // TODO: Handle exception properly
-            throw new Exception("A method specified an incorrect number of parameters (expected " + parameterNames.Count + ", got " + parameters.Count + ")");
+
+			throw new CompilerException(definedLine, 318, name, parameterNames.Count.ToString(), parameters.Count.ToString());
         }
 
         public Value Invoke(Value objectVar, List<Value> parameters)
@@ -109,9 +109,9 @@ namespace SGL.Library.Functions
                     throw new Exception("The method doesn't return the expected return type (" + returnValue.ToString()  + " is not from type " + this.returnType + ")");
                 }*/
                 return returnValue;
-            }
-            // TODO: Handle exception properly
-            throw new Exception("A method specified an incorrect number of parameters (expected " + parameterNames.Count + ", got " + parameters.Count + ")");
+			}
+
+			throw new CompilerException(definedLine, 318, name, parameterNames.Count.ToString(), parameters.Count.ToString());
         }
     }
 }
