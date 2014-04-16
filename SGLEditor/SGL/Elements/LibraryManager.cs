@@ -56,7 +56,8 @@ namespace SGL.Elements
         private void RegisterFunctions()
         {
             RegisterFunction("exp", new ExpFunction());
-            RegisterFunction("sin", new SinFunction());
+			RegisterFunction("sin", new SinFunction());
+			RegisterFunction("cos", new CosFunction());
             RegisterFunction("rand", new RandFunction());
             RegisterFunction("println", new PrintFunction());
         }
