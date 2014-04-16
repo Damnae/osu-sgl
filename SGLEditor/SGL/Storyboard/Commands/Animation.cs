@@ -19,7 +19,7 @@ using System.Text;
 
 namespace SGL.Storyboard.Commands
 {
-    internal class Animation : Command
+	public class Animation : Command
     {
         private readonly AnimationType animationType;
         private readonly int easing;

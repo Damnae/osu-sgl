@@ -17,7 +17,7 @@ using System;
 
 namespace SGL.Storyboard.Generators.Visual
 {
-    internal class AnimationGenerator : AbstractVisualGenerator
+    public class AnimationGenerator : AbstractVisualGenerator
     {
         private readonly int frameCount;
         private readonly int frameDelay;

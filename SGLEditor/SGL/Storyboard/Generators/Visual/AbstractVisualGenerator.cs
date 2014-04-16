@@ -21,7 +21,7 @@ using SGL.Storyboard.Commands;
 
 namespace SGL.Storyboard.Generators.Visual
 {
-    internal abstract class AbstractVisualGenerator : AbstractGenerator, IComparable
+	public abstract class AbstractVisualGenerator : AbstractGenerator, IComparable
     {
         protected string filepath;
         protected string layer;
@@ -217,7 +217,7 @@ namespace SGL.Storyboard.Generators.Visual
 
         #endregion
 
-        public void AddCommand(Command command)
+		protected void AddCommand(Command command)
         {
             if (!insideLoop)
             {

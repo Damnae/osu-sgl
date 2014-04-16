@@ -19,7 +19,7 @@ using System.Text;
 
 namespace SGL.Storyboard.Commands
 {
-    class CommandLoop : Command
+    public class CommandLoop : Command
     {
 
         private int loopCount;

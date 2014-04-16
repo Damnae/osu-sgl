@@ -54,6 +54,7 @@
     </StartupObject>
   </PropertyGroup>
   <ItemGroup>
+    <Compile Include="Framework\BaseStoryboard.cs" />
     <Compile Include="Compiler.cs" />
     <Compile Include="Library\Classes\LayerClass.cs" />
     <Compile Include="Library\Classes\ListClass.cs" />
@@ -71,6 +72,7 @@
     <Compile Include="Library\Functions\Calculation\SinFunction.cs" />
     <Compile Include="Library\Functions\IO\PrintFunction.cs" />
     <Compile Include="Library\Functions\UserFunction.cs" />
+    <Compile Include="Framework\Map.cs" />
     <Compile Include="Nodes\Actions\AssignVariableNode.cs" />
     <Compile Include="Nodes\Actions\DefineVariableNode.cs" />
     <Compile Include="Nodes\Actions\NullNode.cs" />
@@ -118,6 +120,7 @@
     <Compile Include="Nodes\Values\ListNode.cs" />
     <Compile Include="Nodes\Values\LookupNode.cs" />
     <Compile Include="Nodes\Values\ReturnNode.cs" />
+    <Compile Include="Framework\SB.cs" />
     <Compile Include="Storyboard\Commands\Animation.cs" />
     <Compile Include="Storyboard\Commands\AnimationType.cs" />
     <Compile Include="Storyboard\Commands\Command.cs" />
