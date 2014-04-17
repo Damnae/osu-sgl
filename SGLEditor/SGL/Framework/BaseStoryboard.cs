@@ -121,7 +121,7 @@ namespace SGL.Framework {
 			else
 				updatedDiffContents = updatedDiffContents.Replace("WidescreenStoryboard: 1", "WidescreenStoryboard: 0");
 
-			using (TextWriter tw = new StreamWriter(folder + map.Path)) {
+			using (TextWriter tw = new StreamWriter(Path.Combine(folder, map.Path))) {
 				tw.Write(updatedDiffContents);
 			}
 		}
