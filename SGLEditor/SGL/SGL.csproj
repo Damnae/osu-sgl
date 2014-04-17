@@ -139,6 +139,7 @@
     <Compile Include="Tests\Unit.cs" />
     <Compile Include="Tests\UnitTester.cs" />
     <Compile Include="Tests\Values\Variable1Test.cs" />
+    <Compile Include="Util\ColorUtil.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="antlr.runtime">

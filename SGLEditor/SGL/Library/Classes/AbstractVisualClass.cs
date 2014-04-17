@@ -262,6 +262,32 @@ namespace SGL.Library.Classes
                     else
                         throw new CompilerException(-1, 313, Name, name, Value.PrintTypeList(param));
 
+				case "colorHsv":
+				case "colorHsb":
+					if (Value.TypeCompare(param, ValType.Integer, ValType.Double, ValType.Double)) {
+						visualObject.colorHsb(param[0].DoubleValue, param[1].DoubleValue, param[2].DoubleValue);
+						return Value.VOID;
+					} else if (Value.TypeCompare(param, ValType.Integer, ValType.Integer, ValType.Double, ValType.Double)) {
+						visualObject.colorHsb(param[0].IntValue, param[1].DoubleValue, param[2].DoubleValue,
+										   param[3].DoubleValue);
+						return Value.VOID;
+					} else if (Value.TypeCompare(param, ValType.Integer, ValType.Integer, ValType.Integer,
+												 ValType.Double, ValType.Double, ValType.Integer, ValType.Double,
+												 ValType.Double)) {
+						visualObject.colorHsb(param[0].IntValue, param[1].IntValue, param[2].DoubleValue,
+										   param[3].DoubleValue, param[4].DoubleValue, param[5].DoubleValue,
+										   param[6].DoubleValue, param[7].DoubleValue);
+						return Value.VOID;
+					} else if (Value.TypeCompare(param, ValType.Integer, ValType.Integer, ValType.Integer,
+												 ValType.Double, ValType.Double, ValType.Double, ValType.Double,
+												 ValType.Double, ValType.Double)) {
+						visualObject.colorHsb(param[0].IntValue, param[1].IntValue, param[2].IntValue,
+										   param[3].DoubleValue, param[4].DoubleValue, param[5].DoubleValue,
+										   param[6].DoubleValue, param[7].DoubleValue, param[8].DoubleValue);
+						return Value.VOID;
+					} else
+						throw new CompilerException(-1, 313, Name, name, Value.PrintTypeList(param));
+
 				case "additive":
 					if (Value.TypeCompare(param, ValType.Integer, ValType.Integer)) {
 						visualObject.additive(param[0].IntValue, param[1].IntValue);
