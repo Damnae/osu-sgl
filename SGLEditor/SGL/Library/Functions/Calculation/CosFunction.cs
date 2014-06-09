@@ -8,7 +8,7 @@ namespace SGL.Library.Functions.Calculation
     {
         private Value cos(double value)
         {
-            return new Value(Math.Sin(value), ValType.Double);
+            return new Value(Math.Cos(value), ValType.Double);
         }
 
         public override Value Invoke(List<Value> param)
