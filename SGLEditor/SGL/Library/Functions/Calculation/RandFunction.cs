@@ -36,7 +36,7 @@ namespace SGL.Library.Functions.Calculation
                 return rand(param[0].IntValue, param[1].IntValue);
 
             // TODO: Name
-            throw new CompilerException(-1, 302, "sin", Value.PrintTypeList(param));
+            throw new CompilerException(-1, 302, "rand", Value.PrintTypeList(param));
         }
     }
 }
