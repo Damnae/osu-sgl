@@ -234,6 +234,7 @@ namespace SGL.Storyboard.Generators.Visual {
 			var startParams = new[] { startOpacity };
 			var endParams = new[] { endOpacity };
 			AddCommand(new Animation(AnimationType.Fade, easing, startTime, endTime, startParams, endParams));
+			opacity = endOpacity;
 		}
 
 		public void fade(int startTime, int endTime, double startOpacity, double endOpacity) {
@@ -309,6 +310,7 @@ namespace SGL.Storyboard.Generators.Visual {
 			var startParams = new[] { startAngle };
 			var endParams = new[] { endAngle };
 			AddCommand(new Animation(AnimationType.Rotate, easing, startTime, endTime, startParams, endParams));
+			rotation = endAngle;
 		}
 
 		public void rotate(int startTime, int endTime, double startAngle, double endAngle) {
@@ -334,6 +336,9 @@ namespace SGL.Storyboard.Generators.Visual {
 			var startParams = new double[] { startRed, startGreen, startBlue };
 			var endParams = new double[] { endRed, endGreen, endBlue };
 			AddCommand(new Animation(AnimationType.Color, easing, startTime, endTime, startParams, endParams));
+			red = endRed;
+			green = endGreen;
+			blue = endBlue;
 		}
 
 		public void color(int startTime, int endTime, int startRed, int startGreen, int startBlue, int endRed,
