@@ -50,7 +50,8 @@ namespace SGL.Elements
             RegisterClass("Sprite", new SpriteClass());
             RegisterClass("Animation", new AnimationClass());
             RegisterClass("Layer", new LayerClass());
-            RegisterClass("Sample", new SampleClass());
+			RegisterClass("Sample", new SampleClass());
+			RegisterClass("Mesh", new MeshClass());
         }
 
         private void RegisterFunctions()

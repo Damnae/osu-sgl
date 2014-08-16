@@ -62,6 +62,8 @@
     <Compile Include="Util\Vector2.cs" />
     <Compile Include="Framework\SpritePool.cs" />
     <Compile Include="Framework\SpritePools.cs" />
+    <Compile Include="Framework\Mesh.cs" />
+    <Compile Include="Library\Classes\MeshClass.cs" />
     <Compile Include="Library\Classes\LayerClass.cs" />
     <Compile Include="Library\Classes\ListClass.cs" />
     <Compile Include="Library\Classes\AbstractClass.cs" />

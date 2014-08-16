@@ -83,13 +83,10 @@ namespace SGL.Elements
                 {
                     case ValType.Integer:
                         return (int) value;
-                        break;
                     case ValType.Double:
                         return Convert.ToInt32((double) value);
-                        break;
                     default:
                         throw new InvalidOperationException();
-                        break;
                 }
             }
         }
