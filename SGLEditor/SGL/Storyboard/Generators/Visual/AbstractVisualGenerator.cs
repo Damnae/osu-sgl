@@ -465,7 +465,7 @@ namespace SGL.Storyboard.Generators.Visual {
 			this.insideLoop = true;
 		}
 
-		internal void endLoop() {
+		public void endLoop() {
 			this.currentLoop = null;
 			this.insideLoop = false;
 		}
