@@ -21,7 +21,7 @@ namespace SGL.Framework {
 		public void Clear() {
 			pools.Clear();
 		}
-		
+
 		private SpritePool GetPool(String path, String layer, String origin) {
 			String key = GetKey(path, layer, origin);
 

@@ -26,7 +26,7 @@ namespace SGL.Framework {
 
 			return SB.Sprite(path, layer, origin);
 		}
-		
+
 		public SpriteGenerator Get(double startTime, double endTime) {
 			var sprite = Get(startTime);
 			Release(sprite, endTime);

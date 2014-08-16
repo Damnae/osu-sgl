@@ -56,6 +56,10 @@
   <ItemGroup>
     <Compile Include="Framework\BaseStoryboard.cs" />
     <Compile Include="Compiler.cs" />
+    <Compile Include="Framework\Curve\BezierCurve.cs" />
+    <Compile Include="Framework\Curve\Curve.cs" />
+    <Compile Include="Framework\Curve\TransformedCurve.cs" />
+    <Compile Include="Util\Vector2.cs" />
     <Compile Include="Framework\SpritePool.cs" />
     <Compile Include="Framework\SpritePools.cs" />
     <Compile Include="Library\Classes\LayerClass.cs" />
