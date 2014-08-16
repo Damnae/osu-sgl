@@ -50,6 +50,24 @@ namespace SGL.Storyboard.Generators.Visual {
 
 		#region Properties
 
+		public string Filepath {
+			get {
+				return filepath;
+			}
+		}
+
+		public string Origin {
+			get {
+				return origin;
+			}
+		}
+
+		public string Layer {
+			get {
+				return layer;
+			}
+		}
+
 		public double X {
 			get {
 				return x;
