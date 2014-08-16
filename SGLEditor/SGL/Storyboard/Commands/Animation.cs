@@ -1,4 +1,5 @@
-﻿//  Storyboard Generation Language
+﻿using SGL.Elements;
+//  Storyboard Generation Language
 //  Copyright (C) 2013 Dominik Halfkann
 //
 //  This program is free software: you can redistribute it and/or modify
@@ -42,7 +43,10 @@ namespace SGL.Storyboard.Commands
             this.easing = easing;
             this.endTime = endTime;
             this.startParams = startParams;
-            this.endParams = endParams;
+			this.endParams = endParams;
+
+			if (endTime < startTime)
+				throw new CompilerException(-1, 404, animationType.ToString(), startTime.ToString(), endTime.ToString());
         }
 
         public Animation(AnimationType animationType, int startTime, int endTime, double[] startParams,

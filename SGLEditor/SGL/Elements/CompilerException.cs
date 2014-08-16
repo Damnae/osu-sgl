@@ -134,6 +134,8 @@ namespace SGL.Elements {
 				case 403:
 					return "The resulting value is NaN, meaning that it's impossible to return a(n) " + args[0] +
 						   " value.";
+				case 404:
+					return "The " + args[0] + " command end time is before its start time (" + args[2] + " < " + args[1] + ")";
 
 				// Should never occur
 				default:

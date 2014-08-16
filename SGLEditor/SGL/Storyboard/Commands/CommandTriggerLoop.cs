@@ -1,4 +1,5 @@
-﻿//  Storyboard Generation Language
+﻿using SGL.Elements;
+//  Storyboard Generation Language
 //  Copyright (C) 2013 Dominik Halfkann
 //
 //  This program is free software: you can redistribute it and/or modify
@@ -28,6 +29,9 @@ namespace SGL.Storyboard.Commands
         {
             this.triggerName = triggerName;
             this.endTime = endTime;
+
+			if (endTime < startTime)
+				throw new CompilerException(-1, 404, "trigger", startTime.ToString(), endTime.ToString());
         }
 
         public override void AddStoryboardCode(StringBuilder storyboardCode)
