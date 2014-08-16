@@ -37,13 +37,13 @@ namespace SGL.Storyboard.Commands
             this.nestedAnimations.Add(animation);
         }
 
-        public override void AddSoryboardCode(StringBuilder storyboardCode)
+        public override void AddStoryboardCode(StringBuilder storyboardCode)
         {
             storyboardCode.Append(" L," + startTime + "," + loopCount + "\r\n");
             foreach (Animation currentAnimation in nestedAnimations)
             {
                 storyboardCode.Append(" ");
-                currentAnimation.AddSoryboardCode(storyboardCode);
+                currentAnimation.AddStoryboardCode(storyboardCode);
             }
         }
     }

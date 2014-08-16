@@ -30,13 +30,13 @@ namespace SGL.Storyboard.Commands
             this.endTime = endTime;
         }
 
-        public override void AddSoryboardCode(StringBuilder storyboardCode)
+        public override void AddStoryboardCode(StringBuilder storyboardCode)
         {
             storyboardCode.Append(" T," + triggerName + "," + startTime + "," + endTime + "\r\n");
             foreach (Animation currentAnimation in nestedAnimations)
             {
                 storyboardCode.Append(" ");
-                currentAnimation.AddSoryboardCode(storyboardCode);
+                currentAnimation.AddStoryboardCode(storyboardCode);
             }
         }
     }

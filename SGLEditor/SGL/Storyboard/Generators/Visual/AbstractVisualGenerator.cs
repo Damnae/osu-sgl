@@ -160,7 +160,7 @@ namespace SGL.Storyboard.Generators.Visual {
 			}
 
 			foreach (Command command in storyboardCommands) {
-				command.AddSoryboardCode(storyboardCode);
+				command.AddStoryboardCode(storyboardCode);
 			}
 		}
 

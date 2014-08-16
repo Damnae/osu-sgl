@@ -44,6 +44,6 @@ namespace SGL.Storyboard.Commands
 
         #endregion
 
-        public abstract void AddSoryboardCode(StringBuilder storyboardCode);
+        public abstract void AddStoryboardCode(StringBuilder storyboardCode);
     }
 }

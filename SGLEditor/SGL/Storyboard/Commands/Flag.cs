@@ -37,7 +37,7 @@ namespace SGL.Storyboard.Commands
             this.endTime = endTime;
         }
 
-        public override void AddSoryboardCode(StringBuilder storyboardCode)
+        public override void AddStoryboardCode(StringBuilder storyboardCode)
         {
 			switch (flagType)
             {

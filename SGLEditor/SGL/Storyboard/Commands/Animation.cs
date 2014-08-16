@@ -61,10 +61,7 @@ namespace SGL.Storyboard.Commands
         {
         }
 
-        public override void 
-            
-            
-            AddSoryboardCode(StringBuilder storyboardCode)
+        public override void AddStoryboardCode(StringBuilder storyboardCode)
         {
             switch (animationType)
             {
