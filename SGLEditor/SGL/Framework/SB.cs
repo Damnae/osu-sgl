@@ -78,7 +78,7 @@ namespace SGL.Framework {
 		/// <returns></returns>
 		public static double GetBackgroundScale(int backgroundImageWidth, int backgroundImageHeight) {
 			double bgHeightScale = 480.0 / backgroundImageWidth;
-			double bgWidthScale = 640.0 * (1366.0 / 1024.0) / backgroundImageHeight;
+			double bgWidthScale = 640.0 * (1024.0 / 1366.0) / backgroundImageHeight;
 			return bgHeightScale > bgWidthScale ? bgHeightScale : bgWidthScale;
 		}
 	}
