@@ -19,11 +19,18 @@ namespace SGL.Framework {
 		}
 
 		public SpriteGenerator Get(double startTime) {
+			var result = (PooledSprite)null;
 			foreach (var pooledSprite in pooledSprites) {
-				if (pooledSprite.endTime < startTime) {
-					pooledSprites.Remove(pooledSprite);
-					return pooledSprite.sprite;
+				if (pooledSprite.endTime < startTime &&
+					(result == null || pooledSprite.sprite.GetCommandsStartTime() < result.sprite.GetCommandsStartTime())) {
+
+					result = pooledSprite;
 				}
+			}
+
+			if (result != null) {
+				pooledSprites.Remove(result);
+				return result.sprite;
 			}
 
 			return SB.Sprite(path, layer, origin);
