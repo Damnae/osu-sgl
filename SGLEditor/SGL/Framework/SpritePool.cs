@@ -7,13 +7,15 @@ namespace SGL.Framework {
 		private string path;
 		private string layer;
 		private string origin;
+		private bool additive;
 
 		private List<PooledSprite> pooledSprites = new List<PooledSprite>();
 
-		public SpritePool(String path, String layer, String origin) {
+		public SpritePool(String path, String layer, String origin, bool additive) {
 			this.path = path;
 			this.layer = layer;
 			this.origin = origin;
+			this.additive = additive;
 		}
 
 		public SpriteGenerator Get(double startTime) {
@@ -35,6 +37,16 @@ namespace SGL.Framework {
 
 		public void Release(SpriteGenerator sprite, double endTime) {
 			pooledSprites.Add(new PooledSprite(sprite, endTime));
+		}
+
+		public void Clear() {
+			if (additive) {
+				foreach (var pooledSprite in pooledSprites) {
+					var sprite = pooledSprite.sprite;
+					sprite.additive(sprite.GetCommandsStartTime(), (int)pooledSprite.endTime);
+				}
+			}
+			pooledSprites.Clear();
 		}
 
 		class PooledSprite {

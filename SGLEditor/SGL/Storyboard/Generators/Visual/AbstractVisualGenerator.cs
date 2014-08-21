@@ -216,6 +216,13 @@ namespace SGL.Storyboard.Generators.Visual {
 			}
 		}
 
+		public int GetCommandsStartTime() {
+			int commandsStartTime = Int32.MaxValue;
+			foreach (var storyboardCommand in storyboardCommands)
+				commandsStartTime = Math.Min(commandsStartTime, storyboardCommand.startTime);
+			return commandsStartTime;
+		}
+
 		#region Methods for generating code for storyboard commands
 
 		#region move
