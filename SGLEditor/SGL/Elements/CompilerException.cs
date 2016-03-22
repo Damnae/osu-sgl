@@ -118,7 +118,7 @@ namespace SGL.Elements {
 				case 314:
 					return "The method '" + args[1] + "' doesn't exist for class '" + args[0] + "'.";
 				case 315:
-					return "The value for easing must be between 0 and 2 but was " + args[0] + ".";
+					return "The value for easing must be over 0 but was " + args[0] + ".";
 				case 316:
 					return "Variables from type " + args[0] + " don't have any methods.";
 				case 317:

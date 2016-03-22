@@ -228,7 +228,7 @@ namespace SGL.Storyboard.Generators.Visual {
 		#region move
 
 		public virtual void move(int easing, int startTime, int endTime, double startX, double startY, double endX, double endY) {
-			if (easing < 0 || easing > 2)
+			if (easing < 0)
 				throw new CompilerException(-1, 315, easing.ToString());
 			var startParams = new double[] { startX, startY };
 			var endParams = new double[] { endX, endY };
@@ -254,7 +254,7 @@ namespace SGL.Storyboard.Generators.Visual {
 		#region fade
 
 		public virtual void fade(int easing, int startTime, int endTime, double startOpacity, double endOpacity) {
-			if (easing < 0 || easing > 2)
+			if (easing < 0)
 				throw new CompilerException(-1, 315, easing.ToString());
 			var startParams = new[] { startOpacity };
 			var endParams = new[] { endOpacity };
@@ -279,7 +279,7 @@ namespace SGL.Storyboard.Generators.Visual {
 		#region scale
 
 		public virtual void scale(int easing, int startTime, int endTime, double startScale, double endScale) {
-			if (easing < 0 || easing > 2)
+			if (easing < 0)
 				throw new CompilerException(-1, 315, easing.ToString());
 			var startParams = new[] { startScale };
 			var endParams = new[] { endScale };
@@ -305,7 +305,7 @@ namespace SGL.Storyboard.Generators.Visual {
 
 		public virtual void scaleVec(int easing, int startTime, int endTime, double startX, double startY, double endX,
 							 double endY) {
-			if (easing < 0 || easing > 2)
+			if (easing < 0)
 				throw new CompilerException(-1, 315, easing.ToString());
 			var startParams = new[] { startX, startY };
 			var endParams = new[] { endX, endY };
@@ -330,7 +330,7 @@ namespace SGL.Storyboard.Generators.Visual {
 		#region rotate
 
 		public virtual void rotate(int easing, int startTime, int endTime, double startAngle, double endAngle) {
-			if (easing < 0 || easing > 2)
+			if (easing < 0)
 				throw new CompilerException(-1, 315, easing.ToString());
 			var startParams = new[] { startAngle };
 			var endParams = new[] { endAngle };
@@ -356,7 +356,7 @@ namespace SGL.Storyboard.Generators.Visual {
 
 		public virtual void color(int easing, int startTime, int endTime, int startRed, int startGreen, int startBlue,
 						  int endRed, int endGreen, int endBlue) {
-			if (easing < 0 || easing > 2)
+			if (easing < 0)
 				throw new CompilerException(-1, 315, easing.ToString());
 			var startParams = new double[] { startRed, startGreen, startBlue };
 			var endParams = new double[] { endRed, endGreen, endBlue };
@@ -408,7 +408,7 @@ namespace SGL.Storyboard.Generators.Visual {
 		#region moveX
 
 		public virtual void moveX(int easing, int startTime, int endTime, double startX, double endX) {
-			if (easing < 0 || easing > 2)
+			if (easing < 0)
 				throw new CompilerException(-1, 315, easing.ToString());
 			var startParams = new[] { startX };
 			var endParams = new[] { endX };
@@ -433,7 +433,7 @@ namespace SGL.Storyboard.Generators.Visual {
 		#region moveY
 
 		public virtual void moveY(int easing, int startTime, int endTime, double startY, double endY) {
-			if (easing < 0 || easing > 2)
+			if (easing < 0)
 				throw new CompilerException(-1, 315, easing.ToString());
 			var startParams = new[] { startY };
 			var endParams = new[] { endY };

@@ -249,7 +249,7 @@
 			this.CopyrightLabel.Alignment = System.Windows.Forms.ToolStripItemAlignment.Right;
 			this.CopyrightLabel.Name = "CopyrightLabel";
 			this.CopyrightLabel.Size = new System.Drawing.Size(292, 22);
-			this.CopyrightLabel.Text = "SGL Editor (Beta 1.1.002 d3) - Dominik Halfkann (2013)";
+			this.CopyrightLabel.Text = "SGL Editor (Beta 1.1.002 d4) - Dominik Halfkann (2013)";
 			this.CopyrightLabel.Click += new System.EventHandler(this.CopyrightLabel_Click);
 			// 
 			// menuStrip1
